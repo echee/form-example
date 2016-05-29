@@ -1,7 +1,7 @@
 # form-example
 
 ## Prerequisites
-⋅⋅* npm
+* npm
 
 ## To build
 1. Run 'npm install'
