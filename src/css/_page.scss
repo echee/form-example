@@ -28,6 +28,7 @@ nav {
         font-size: 14px;
         padding: 20px 20px;
         text-decoration: none;
+        @include transition(color);
         &:hover, &:focus {
           color: #fff;
         }

@@ -27,6 +27,7 @@ label {
   border-radius: 3px;
   font-size: 14px;
   padding: 13px;
+  @include transition(border);
   &:hover, &:focus {
     border-color: #41617d;
   }
@@ -59,11 +60,12 @@ label {
     border: none;
     border-radius: 3px;
     color: #fff;
+    cursor: pointer;
     font-size: 14px;
     margin: 0 10px 15px 0px;
     min-width: 150px;
     padding: 13px;
-    cursor: pointer;
+    @include transition(background);
     &:hover, &:focus {
       background: $primary-btn-active;
     }

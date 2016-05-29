@@ -1,0 +1,6 @@
+@mixin transition($element) {
+  -webkit-transition: $element 500ms ease-out;
+  -moz-transition: $element 500ms ease-out;
+  -o-transition: $element 500ms ease-out;
+  transition: $element 500ms ease-out;
+}
