@@ -1,6 +1,10 @@
 .form-heading {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 45px 0 35px;
   text-align: center;
 }
+
 
 .form-container {
   margin: 0 auto;
@@ -12,4 +16,46 @@
 label {
   display: block;
   margin-bottom: 15px;
+}
+
+.input-text {
+  border: 1px solid $form-input-border;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 13px;
+  &:hover, &:focus {
+    border-color: #41617d;
+  }
+}
+
+.primary-btn {
+    background: $primary-btn;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 10px 15px 0px;
+    min-width: 150px;
+    padding: 13px;
+    cursor: pointer;
+    &:hover, &:focus {
+      background: $primary-btn-active;
+    }
+}
+
+.divider {
+  border: 1px solid #e1e6eb;
+  border-bottom: 0px;
+  margin-bottom: 35px;
+}
+
+.disclaimer {
+  color: #697686;
+  font-size: 12px;
+  margin: 0px;
+  a {
+    color: $link-color;
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
