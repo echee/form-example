@@ -1,0 +1,25 @@
+{
+  "name": "form-example",
+  "version": "1.0.0",
+  "description": "Form code test from expert360",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echee/form-example.git"
+  },
+  "author": "Emma Chee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echee/form-example/issues"
+  },
+  "homepage": "https://github.com/echee/form-example#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0"
+  }
+}

@@ -1,0 +1,35 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: $base-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: #f0f2f5;
+  margin: 0px;
+}
+
+nav {
+  .main-nav {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        display: block;
+        font-size: 14px;
+        padding: 20px 20px;
+        text-decoration: none;
+        &:hover, &:focus {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
