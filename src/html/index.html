@@ -21,18 +21,26 @@
       <h1 class="form-heading">Create your free client account</h1>
       <hr class="divider">
       <form class="" action="success/index.html" method="post">
+        <div class="half">
           <label for="first_name">First Name</label>
-          <input id="first_name" class="input-text" type="text" required name="first_name" value="">
+          <input id="first_name" class="input-text input-full" type="text" required name="first_name" value="">
+        </div>
+        <div class="half">
           <label for="last_name">Last Name</label>
-          <input id="last_name" class="input-text" type="text" required name="last_name" value="">
+          <input id="last_name" class="input-text input-full" type="text" required name="last_name" value="">
+        </div>
+        <div class="full">
           <label for="password">Password</label>
-          <input id="password" class="input-text" type="password" required name="password" value="">
+          <input id="password" class="input-text input-full" type="password" required name="password" value="">
+        </div>
+        <div class="full">
           <label for="email_address">Email</label>
-          <input id="email_address" class="input-text" type="email" required name="email_address" value="">
-          <button type="submit" class="primary-btn" name="button">Sign up</button>
+          <input id="email_address" class="input-text input-full" type="email" required name="email_address" value="">
+          <button type="submit" class="submit-btn primary-btn" name="button">Sign up</button>
           <p class="disclaimer">
             By clicking Sign Up, you agree to our Terms &amp; Conditions, you have read our <a href="#">Privacy Policy</a> and you confirm that you're 18 years old or over.
           </p>
+        </div>
       </form>
     </section>
   </body>

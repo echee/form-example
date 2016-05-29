@@ -28,6 +28,28 @@ label {
   }
 }
 
+.full {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.half {
+  float: left;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  width: 50%;
+}
+
+.input-full {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.submit-btn {
+  float: left;
+}
+
 .primary-btn {
     background: $primary-btn;
     border: none;
