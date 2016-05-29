@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+  background: #21282e;
   .main-nav {
     list-style: none;
     margin: 0;
@@ -22,6 +23,7 @@ nav {
     li {
       float: left;
       a {
+        color: #97b1c5;
         display: block;
         font-size: 14px;
         padding: 20px 20px;
