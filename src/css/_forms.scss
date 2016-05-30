@@ -80,3 +80,22 @@ label {
 .disclaimer {
   margin: 0px;
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 10px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+  .half {
+    width: 100%;
+  }
+  .half, .full, .input-full {
+    margin-bottom: 10px;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+}
