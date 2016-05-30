@@ -13,11 +13,24 @@ body {
   background: #f0f2f5;
   margin: 0px;
 }
+.mobile-menu {
+  background: url("../img/menu.png") no-repeat;
+  background-position: 2px 3px;
+  display: none;
+  float:right;
+  margin-right: 20px;
+  margin-top: 16px;
+  text-indent: -999em;
+  width: 30px;
+  height: 30px;
+}
+
 .logo {
   background: url("../img/logo.png") 0 50% no-repeat;
   background-size: 100%;
   display: inline-block;
   margin-right: 20px;
+  margin-left: 35px;
   overflow: hidden;
   padding: 0px;
   text-indent: -999em;
@@ -32,7 +45,7 @@ body {
   max-width: 770px;
   overflow: hidden;
   width: 100%;
-  min-height: 700px;
+  min-height: 670px;
   margin: 0 auto;
 }
 p {
@@ -47,6 +60,7 @@ p {
 footer {
   @extend %clear;
   background: $footer-bg;
+  margin-top: 40px;
   overflow: hidden;
   ul {
     @extend %clear-list;
@@ -58,7 +72,8 @@ nav {
   .main-nav {
     @extend %clear-list;
     overflow: hidden;
-    padding-left: 35px;
+    padding-left: 0px;
+    display: inline-block;
     li {
       float: left;
       a {
@@ -127,6 +142,40 @@ nav {
     @include transition(background);
     &:hover {
       background: url('../img/social-sprite-active.png') -46px 1px no-repeat #1187bc;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  .content {
+    min-height: auto;
+  }
+  .connect {
+    float: initial;
+    margin: 8px auto 15px;
+    overflow: hidden;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  nav .main-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    &.active {
+      display: block;
+    }
+    li{
+      background: #21282e;
+      border-top: 1px solid #97b1c5;
+      width: 100%;
     }
   }
 }

@@ -1,6 +1,27 @@
 $(document).ready(function() {
+    mobileMenu.init();
     createAccount.init();
 });
+
+var mobileMenu = {
+  options: {
+    button: ".mobile-menu",
+    dropdown: '.main-nav'
+  },
+  init: function(){
+    this.bindClickEvents();
+  },
+  bindClickEvents: function(){
+    menuButton = mobileMenu.options.button;
+    menuDropdown = mobileMenu.options.dropdown;
+    $('.mobile-menu').on('click', function(){
+      mobileMenu.toggleActive();
+    });
+  },
+  toggleActive: function(){
+    $(menuDropdown).toggleClass('active');
+  }
+};
 
 var createAccount = {
   options: {
@@ -10,7 +31,7 @@ var createAccount = {
     this.bindSubmitEvent();
   },
   bindSubmitEvent: function(){
-    form = this.options.form;
+    form = createAccount.options.form;
     $(form).on('submit', function( e ) {
       e.preventDefault();
       createAccount.getSuccessPage(this);
