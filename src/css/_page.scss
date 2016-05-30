@@ -41,6 +41,11 @@ body {
 .center {
   text-align: center;
 }
+
+.right {
+  float: right!important;
+}
+
 .content {
   max-width: 770px;
   overflow: hidden;
@@ -69,6 +74,12 @@ footer {
 }
 nav {
   background: #21282e;
+  .secondary-nav {
+    padding-left: 0px;
+    @extend %clear-list;
+    position: absolute;
+    right: 0;
+  }
   .main-nav {
     @extend %clear-list;
     overflow: hidden;
@@ -146,6 +157,46 @@ nav {
   }
 }
 
+@media (max-width: 1090px) {
+  .mobile-menu {
+    display: block;
+  }
+  nav .main-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    &.active {
+      display: block;
+    }
+    &>li{
+      background: #21282e;
+      border-top: 1px solid #97b1c5;
+      width: 50%;
+      &:nth-child(odd){
+        border-right: 1px solid #97b1c5;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+  nav .secondary-nav {
+    position: static;
+    li {
+      width: 50%;
+      border-bottom: 1px solid #97b1c5;
+      &:nth-child(odd){
+        border-right: 1px solid #97b1c5;
+      }
+    }
+  }
+  .secondary-nav,
+  .main-nav {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   footer {
     text-align: center;
@@ -161,21 +212,19 @@ nav {
   .logo {
     margin-left: 20px;
   }
-  .mobile-menu {
-    display: block;
-  }
   nav .main-nav {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 64px;
-    &.active {
-      display: block;
+    li:nth-child(odd) {
+      border-right: 0px;
     }
-    li{
-      background: #21282e;
-      border-top: 1px solid #97b1c5;
+    &>li{
       width: 100%;
+    }
+  }
+  nav .secondary-nav {
+    position: static;
+    li {
+      width: 100%;
+      border-bottom: 1px solid #97b1c5;
     }
   }
 }
