@@ -1,7 +1,7 @@
 .page-heading {
   font-size: 30px;
   font-weight: normal;
-  margin: 45px 0 35px;
+  margin: 45px 0 25px;
   text-align: center;
 }
 
@@ -45,10 +45,6 @@ label {
   width: 100%;
 }
 
-.submit-btn {
-  float: left;
-}
-
 .primary-btn {
     background: $primary-btn;
     border: none;
@@ -65,9 +61,18 @@ label {
     }
 }
 
+.navigate-btn {
+  margin-top: 40px;
+}
+
+.submit-btn {
+  float: left;
+}
+
 .divider {
   border: 1px solid #e1e6eb;
   border-bottom: 0px;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 
