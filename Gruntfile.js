@@ -54,9 +54,19 @@ module.exports = function(grunt) {
         src: ['*.html', '**/*.html'],
         dest: 'dist/',
         expand: true
+      },
+      img: {
+        cwd: 'src/img',
+        src: '**',
+        dest: 'dist/img',
+        expand: true
       }
     },
     watch: {
+      img: {
+        files: ['src/img/**'],
+        tasks: ['copy:img']
+      },
       scripts: {
         files: ['src/js/*.js', 'Gruntfile.js'],
         tasks: ['jshint', 'uglify:dev']

@@ -18,7 +18,9 @@ body {
 }
 .content {
   max-width: 770px;
+  overflow: hidden;
   width: 100%;
+  min-height: 700px;
   margin: 0 auto;
 }
 p {
@@ -32,6 +34,8 @@ p {
 }
 footer {
   @extend %clear;
+  background: $footer-bg;
+  overflow: hidden;
   ul {
     @extend %clear-list;
     @extend %inline-list ;
@@ -63,11 +67,20 @@ nav {
   font-size: 12px;
 }
 
+.copyright {
+  margin: 15px 0;
+}
+
 .connect {
+  float: right;
   font-size: 14px;
-  margin: 12px 0;
+  margin: 8px 0 5px;
+  width: 255px;
   li {
     margin-right: 10px;
+    &.label {
+      margin: 6px 10px 6px 0;
+    }
   }
 }
 
@@ -77,13 +90,30 @@ nav {
   height: 30px;
   overflow: hidden;
   text-indent: 99px;
+  border: 1px solid #000;
+  border-radius: 3px;
   &.facebook {
-
+    background: url('../img/social-sprite.png') 2px 1px no-repeat;
+    border-color: #4465a0;
+    @include transition(background);
+    &:hover {
+      background: url('../img/social-sprite-active.png') 2px 1px no-repeat #4465a0;
+    }
   }
   &.twitter {
-
+    background: url('../img/social-sprite.png') -21px 1px no-repeat;
+    border-color: #20b6ed;
+    @include transition(background);
+    &:hover {
+      background: url('../img/social-sprite-active.png') -21px 1px no-repeat #20b6ed;
+    }
   }
-  &.linkedIn {
-
+  &.linkedin {
+    background: url('../img/social-sprite.png') -46px 1px no-repeat;
+    border-color: #1187bc;
+    @include transition(background);
+    &:hover {
+      background: url('../img/social-sprite-active.png') -46px 1px no-repeat #1187bc;
+    }
   }
 }
