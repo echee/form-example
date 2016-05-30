@@ -4,3 +4,18 @@
   -o-transition: $element 500ms ease-out;
   transition: $element 500ms ease-out;
 }
+
+%clear {
+  display: block;
+  clear: both;
+}
+
+%clear-list {
+  list-style: none;
+  margin: 0;
+}
+%inline-list {
+  li {
+    float: left;    
+  }
+}

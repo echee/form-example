@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="js/scripts.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
     <title>Form Example</title>
   </head>
@@ -17,31 +18,44 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </nav>
-    <section class="form-container">
-      <h1 class="form-heading">Create your free client account</h1>
+    <section class="content" id="form-container">
+      <h1 class="page-heading">Create your free client account</h1>
       <hr class="divider">
-      <form class="" action="success/index.html" method="post">
+      <form id="create-account" action="success/index.html" method="post">
         <div class="half">
-          <label for="first_name">First Name</label>
-          <input id="first_name" class="input-text input-full" type="text" required name="first_name" value="">
+          <label for="first-name">First Name</label>
+          <input id="first-name" class="input-text input-full" type="text" required name="first-name" value="">
         </div>
         <div class="half">
-          <label for="last_name">Last Name</label>
-          <input id="last_name" class="input-text input-full" type="text" required name="last_name" value="">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" class="input-text input-full" type="text" required name="last-name" value="">
         </div>
         <div class="full">
           <label for="password">Password</label>
           <input id="password" class="input-text input-full" type="password" required name="password" value="">
         </div>
         <div class="full">
-          <label for="email_address">Email</label>
-          <input id="email_address" class="input-text input-full" type="email" required name="email_address" value="">
+          <label for="email-address">Email</label>
+          <input id="email-address" class="input-text input-full" type="email" required name="email-address" value="">
+        </div>
+        <div class="full">
           <button type="submit" class="submit-btn primary-btn" name="button">Sign up</button>
-          <p class="disclaimer">
-            By clicking Sign Up, you agree to our Terms &amp; Conditions, you have read our <a href="#">Privacy Policy</a> and you confirm that you're 18 years old or over.
+          <p class="small-print disclaimer">
+            By clicking Sign Up, you agree to our Terms &amp; Conditions, you have read our <a href="#" class="text-link">Privacy Policy</a> and you confirm that you're 18 years old or over.
           </p>
         </div>
       </form>
     </section>
+    <footer>
+      <p class="small-print copyright half">
+        &copy; Copyright 2015 by Expert360. All Rights Reserved.
+      </p>
+      <ul class="connect half">
+          <li>Connect with us</li>
+          <li class="social"><a href="#" class="icon facebook">Facebook</a></li>
+          <li class="social"><a href="#" class="icon twitter">Twitter</a></li>
+          <li class="social"><a href="#" class="icon linkedin">linkedIn</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
