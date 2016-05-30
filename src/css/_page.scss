@@ -13,6 +13,18 @@ body {
   background: #f0f2f5;
   margin: 0px;
 }
+.logo {
+  background: url("../img/logo.png") 0 50% no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 20px;
+  overflow: hidden;
+  padding: 0px;
+  text-indent: -999em;
+  width: 90px;
+  height: 59px;
+}
+
 .center {
   text-align: center;
 }
@@ -46,6 +58,7 @@ nav {
   .main-nav {
     @extend %clear-list;
     overflow: hidden;
+    padding-left: 35px;
     li {
       float: left;
       a {
@@ -89,7 +102,7 @@ nav {
   width: 30px;
   height: 30px;
   overflow: hidden;
-  text-indent: 99px;
+  text-indent: -999em;
   border: 1px solid #000;
   border-radius: 3px;
   &.facebook {
