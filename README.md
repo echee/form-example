@@ -11,7 +11,7 @@ This is a responsive form that displays a success page, using data captured in t
 The production files should be available in the 'dist' folder after running 'grunt build'.
 
 ## Viewing the files in a browser
-* I have cloned this repo into the Sites folder on my machine (Macbook Pro), it should be available at 'localhost/~<username>'.
+* I have cloned this repo into the Sites folder on my machine (Macbook Pro), it should be available at http://localhost/form-example/dist/ if you have also setup a Sites directory on your machine.
 
 
 ## Discssion
@@ -30,3 +30,4 @@ The JS is in 3 files, 2 plugins and 1 main file which initialises the js plugins
 * Make the "tablet" menu nicer.
 * Create custom error handling to aid in accessibilty, such as returning errors at the top of the field, and then setting focus to the errors.
 * check the color accesibilty of the text
+* Create a sprite sheet for the icons used. Or see if I can use fontello icons. This would make it easier to add more icons in the future and it would look better on retina screens.
