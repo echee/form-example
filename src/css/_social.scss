@@ -1,6 +1,6 @@
 // Social Connect module
 
-.connect {
+.social {
   float: right;
   font-size: 14px;
   margin: 8px 0 5px;
@@ -40,7 +40,7 @@
 
 
 @media (max-width: 768px) {
-  .connect {
+  .social {
     float: initial;
     margin: 8px auto 15px;
     overflow: hidden;
