@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  background: #f0f2f5;
+  background: $page-bg-color;
   margin: 0px;
 }
 
 p {
-  color: #697686;
+  color: $body-color;
   font-size: 18px;
   a {
     color: $link-color;
@@ -75,7 +75,7 @@ footer {
 }
 
 .divider {
-  border: 1px solid #e1e6eb;
+  border: 1px solid $border-color;
   border-bottom: 0px;
   margin-top: 10px;
   margin-bottom: 35px;

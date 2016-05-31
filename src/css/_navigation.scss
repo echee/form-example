@@ -31,7 +31,7 @@ nav {
   li {
     float: left;
     a {
-      color: #97b1c5;
+      color: $light-color;
       display: block;
       font-size: 14px;
       padding: 20px 20px;
@@ -73,8 +73,8 @@ nav {
     display: block;
   }
   .main-nav {
-    border-bottom: 1px solid #97b1c5;
-    border-top: 1px solid #97b1c5;
+    border-bottom: 1px solid $light-color;
+    border-top: 1px solid $light-color;
     display: none;
     margin-left: 0px;
     position: absolute;
@@ -88,7 +88,7 @@ nav {
     }
     ul {
       width: 100%;
-      background: #21282e;
+      background: $nav-color;
       &:last-child {
         li:last-child {
           border-bottom: 0px;
@@ -96,10 +96,10 @@ nav {
       }
     }
     li{
-      border-bottom: 1px solid #97b1c5;
+      border-bottom: 1px solid $light-color;
       width: 50%;
       &:nth-child(odd){
-        border-right: 1px solid #97b1c5;
+        border-right: 1px solid $light-color;
       }
     }
   }

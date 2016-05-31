@@ -4,12 +4,16 @@ $base-font: 'Open Sans', sans-serif;
 $heading-h1: 30px;
 
 // colours
-$form-input-border: #e1e6eb;
+$page-bg-color: #f0f2f5;
+$active-color: #41617d;
+$border-color: #e1e6eb;
 $form-label: #21282e;
 $footer-bg: #e1e6eb;
+$body-color: #697686;
 $link-color: #e66022;
+$light-color: #97b1c5;
 $primary-btn: #e66022;
-$primary-btn-active: #41617d;
+$primary-btn-active: $active-color;
 $nav-color: #21282e;
 $facebook-color: #4465a0;
 $twitter-color: #20b6ed;
