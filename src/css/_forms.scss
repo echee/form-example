@@ -1,0 +1,46 @@
+form, #success-container {
+  max-width: 595px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.input-text {
+  border: 1px solid $border-color;
+  font-size: 14px;
+  padding: 13px;
+  @extend %rounded-edges;
+  @include transition(border);
+  &:hover, &:focus {
+    border-color: $active-color;
+  }
+}
+
+.input-full {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.disclaimer {
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 10px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+  .half {
+    width: 100%;
+  }
+  .half, .full, .input-full {
+    margin-bottom: 10px;
+  }
+}

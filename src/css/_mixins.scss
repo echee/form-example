@@ -1,0 +1,38 @@
+//commonly used styles
+
+@mixin transition($element) {
+  -webkit-transition: $element 250ms ease-out;
+  -moz-transition: $element 250ms ease-out;
+  -o-transition: $element 250ms ease-out;
+  transition: $element 250ms ease-out;
+}
+
+@mixin social-icon($position, $brand-color) {
+  background: url('../img/social-sprite.png') $position no-repeat;
+  border-color: $brand-color;
+  @include transition(background);
+  &:hover {
+    background: url('../img/social-sprite-active.png') $position no-repeat $brand-color;
+  }
+}
+
+%clear {
+  display: block;
+  clear: both;
+}
+
+%clear-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+}
+
+%inline-list {
+  li {
+    float: left;
+  }
+}
+
+%rounded-edges {
+  border-radius: 3px;
+}

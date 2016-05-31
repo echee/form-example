@@ -1,0 +1,102 @@
+// Page struture and general style components
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: $base-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: $page-bg-color;
+  margin: 0px;
+}
+
+p {
+  color: $body-color;
+  font-size: 18px;
+  a {
+    color: $link-color;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+footer {
+  background: $footer-bg;
+  margin-top: 40px;
+  overflow: hidden;
+  padding: 0 10px;
+  ul {
+    @extend %clear-list;
+    @extend %inline-list;
+  }
+}
+
+.page-heading {
+  font-size: $heading-h1;
+  font-weight: normal;
+  margin: 45px 0 25px;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  background: url("../img/logo.png") 0 50% no-repeat;
+  background-size: 100%;
+  margin-right: 20px;
+  margin-left: 35px;
+  overflow: hidden;
+  padding: 0px;
+  text-indent: -999em;
+  width: 90px;
+  height: 60px;
+}
+
+.content {
+  max-width: 770px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 670px;
+  margin: 0 auto;
+}
+
+
+.small-print {
+  font-size: 12px;
+}
+
+.copyright {
+  margin: 15px 0;
+}
+
+.divider {
+  border: 1px solid $border-color;
+  border-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+
+@media (max-width: 1090px) {
+  .logo {
+    float: left;
+    position: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  .content {
+    min-height: auto;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+}

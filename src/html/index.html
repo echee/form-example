@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js" charset="utf-8"></script>
+    <title>Form Example</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="#">expert 360</a>
+        <a id="nav-mobile-btn" class="mobile-menu" href="#">mobile menu</a>
+        <div id="nav-primary" class="main-nav">
+          <ul class="left">
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Post a Project</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+              <a href="#" class="primary-btn">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="nav-overlay" class="overlay"></div>
+    </header>
+    <section class="content" id="form-container">
+      <h1 class="page-heading">Create your free client account</h1>
+      <hr class="divider">
+      <form id="create-account" action="success/index.html" method="post">
+        <div class="half">
+          <label for="first-name">First Name</label>
+          <input id="first-name" class="input-text input-full" type="text" required aria-required="true" name="first-name" value="">
+        </div>
+        <div class="half">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" class="input-text input-full" type="text" required aria-required="true" name="last-name" value="">
+        </div>
+        <div class="full">
+          <label for="password">Password</label>
+          <input id="password" class="input-text input-full" type="password" required aria-required="true" name="password" value="">
+        </div>
+        <div class="full">
+          <label for="email-address">Email</label>
+          <input id="email-address" class="input-text input-full" type="email" required aria-required="true" name="email-address" value="">
+        </div>
+        <div class="full">
+          <button type="submit" class="submit-btn primary-btn" name="button">Sign up</button>
+          <p class="small-print disclaimer">
+            By clicking Sign Up, you agree to our Terms &amp; Conditions, you have read our <a href="#" class="text-link">Privacy Policy</a> and you confirm that you're 18 years old or over.
+          </p>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p class="small-print copyright half">
+        &copy; Copyright 2015 by Expert360. All Rights Reserved.
+      </p>
+      <div class="half clear-bottom">
+        <ul class="social">
+            <li class=label>Connect with us</li>
+            <li><a href="#" class="icon facebook" aria-label="Like the expert360 page on Facebook">Facebook</a></li>
+            <li><a href="#" class="icon twitter" aria-label="Follow expert360 on Twitter">Twitter</a></li>
+            <li><a href="#" class="icon linkedin" aria-label="Connect with expert360 on linkedin">linkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
