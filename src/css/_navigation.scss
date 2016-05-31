@@ -1,0 +1,121 @@
+// All navigation stlyes
+nav {
+  background: $nav-color;
+  overflow: hidden;
+}
+
+// The mobile menu trigger button
+.mobile-menu {
+  background: url("../img/menu.png") no-repeat; // @TODO: could have converted this to a sprite or used something like fontello
+  background-position: 2px 3px;
+  display: none;
+  float:right;
+  margin-right: 35px;
+  margin-top: 16px;
+  text-indent: -999em;
+  width: 30px;
+  height: 30px;
+  &.active {
+    background: url("../img/menu-active.png") no-repeat; // @TODO: could have converted this to a sprite or used something like fontello
+    background-position: 2px 3px;
+  }
+}
+
+// the menu container for the left and right menu lists
+.main-nav {
+  margin-left: 150px;
+  overflow: hidden;
+  ul {
+    @extend %clear-list;
+    float: left;
+  }
+  li {
+    float: left;
+    a {
+      color: #97b1c5;
+      display: block;
+      font-size: 14px;
+      padding: 20px 20px;
+      text-decoration: none;
+      @include transition(color);
+      &:hover, &:focus {
+        color: #fff;
+      }
+    }
+    .primary-btn {
+      margin: 8px 35px 7px 20px;
+      padding: 13px;
+      color: #fff;
+      @include transition(background); // @TODO: yeh, this is a bit messy redeclaring the transition
+    }
+  }
+}
+// The overlay used behind the mobile nav.
+.overlay {
+  display: none;
+  background: #000;
+  opacity: 0.7;
+  margin-top: 64px; // added so that it doesn't cover the expert360 logo
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &.active {
+    display: block;
+  }
+}
+
+// @TODO This is a weird breakpoint, but the navigation elements are too long to remain inline till a standard tablet breakpoint
+// would normally work with a designer to see if there is a way to avoid an off breakpoint.
+// maybe an alternative design for desktop compared to xl-desktop
+@media (max-width: 1090px) {
+  .mobile-menu {
+    display: block;
+  }
+  .main-nav {
+    border-bottom: 1px solid #97b1c5;
+    border-top: 1px solid #97b1c5;
+    display: none;
+    margin-left: 0px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    width: 100%;
+    &.active {
+      display: block;
+      z-index: 99;
+    }
+    ul {
+      width: 100%;
+      background: #21282e;
+      &:last-child {
+        li:last-child {
+          border-bottom: 0px;
+        }
+      }
+    }
+    li{
+      border-bottom: 1px solid #97b1c5;
+      width: 50%;
+      &:nth-child(odd){
+        border-right: 1px solid #97b1c5;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    margin-right: 20px;
+  }
+  nav .main-nav {
+    li:nth-child(odd) {
+      border-right: 0px;
+    }
+    li{
+      width: 100%;
+    }
+  }
+}

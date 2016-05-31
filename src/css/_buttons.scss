@@ -1,0 +1,25 @@
+// Buttons
+.primary-btn {
+    background: $primary-btn;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 10px 15px 0px;
+    padding: 13px;
+    @extend %rounded-edges;
+    @include transition(background);
+    &:hover, &:focus {
+      background: $primary-btn-active;
+    }
+}
+
+.navigate-btn {
+  margin-top: 40px;
+}
+
+.submit-btn {
+  float: left;
+  min-width: 150px;
+}

@@ -8,27 +8,30 @@
     <title>Form Example</title>
   </head>
   <body>
+    <header>
       <nav>
         <a class="logo" href="#">expert 360</a>
-        <a class="mobile-menu" href="#">mobile menu</a>
-        <ul class="main-nav">
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">How we work</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Blog</a></li>
-          <li>
-            <ul class="secondary-nav right">
-              <li><a href="#">Post a Project</a></li>
-              <li><a href="#">Login</a></li>
-              <li>
-                <button type="submit" class="primary-btn header-btn" name="button">Sign up</button>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <a id="nav-mobile-btn" class="mobile-menu" href="#">mobile menu</a>
+        <div id="nav-primary" class="main-nav">
+          <ul>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Post a Project</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+              <a href="#" class="primary-btn">Sign up</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div id="nav-overlay" class="overlay"></div>
+    </header>
     <section class="content" id="form-container">
       <h1 class="page-heading">Create your free client account</h1>
       <hr class="divider">
@@ -61,15 +64,14 @@
       <p class="small-print copyright half">
         &copy; Copyright 2015 by Expert360. All Rights Reserved.
       </p>
-      <div class="container">
-
+      <div class="half clear-bottom">
+        <ul class="connect">
+            <li class=label>Connect with us</li>
+            <li><a href="#" class="icon facebook">Facebook</a></li>
+            <li><a href="#" class="icon twitter">Twitter</a></li>
+            <li><a href="#" class="icon linkedin">linkedIn</a></li>
+        </ul>
       </div>
-      <ul class="connect half">
-          <li class=label>Connect with us</li>
-          <li><a href="#" class="icon facebook">Facebook</a></li>
-          <li><a href="#" class="icon twitter">Twitter</a></li>
-          <li><a href="#" class="icon linkedin">linkedIn</a></li>
-      </ul>
     </footer>
   </body>
 </html>

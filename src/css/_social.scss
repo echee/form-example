@@ -1,0 +1,48 @@
+// Social Connect module
+
+.connect {
+  float: right;
+  font-size: 14px;
+  margin: 8px 0 5px;
+  width: 225px;
+  li {
+    margin-right: 10px;
+    &.label {
+      margin: 6px 10px 6px 0;
+    }
+    &:last-child {
+      margin: 0px;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 1px solid #000;
+  @extend %rounded-edges;
+  &.facebook {
+    @include transition(background);
+    @include social-icon(2px 1px, $facebook-color);
+  }
+  &.twitter {
+    @include transition(background);
+    @include social-icon(-21px 1px, $twitter-color);
+  }
+  &.linkedin {
+    @include transition(background);
+    @include social-icon(-46px 1px, $linkedin-color);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .connect {
+    float: initial;
+    margin: 8px auto 15px;
+    overflow: hidden;
+  }
+}
