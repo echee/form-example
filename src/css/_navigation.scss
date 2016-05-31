@@ -27,7 +27,6 @@ nav {
   overflow: hidden;
   ul {
     @extend %clear-list;
-    float: left;
   }
   li {
     float: left;
