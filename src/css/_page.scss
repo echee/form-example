@@ -27,7 +27,6 @@ p {
 }
 
 footer {
-  @extend %clear;
   background: $footer-bg;
   margin-top: 40px;
   overflow: hidden;
