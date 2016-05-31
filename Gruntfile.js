@@ -97,7 +97,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'compass:dist',
-    'copy'
+    'copy',
+    'uglify:dist'
   ]);
 
 };
