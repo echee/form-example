@@ -16,8 +16,8 @@ The production files should be available in the 'dist' folder after running 'gru
 
 ## Discssion
 ### CSS
-I've opted to use sass to compile the css, I hope this is ok. It allowed me to create mixins and extendable css for css rules that were commonly used. This cut out repetition of css declarations.
-I've broken the css into site components so I can easily find the css I need to edit.
+I've opted to use SASS to compile the CSS, I hope this is ok. It allowed me to create mixins and extendable CSS for CSS rules that were commonly used. This cut out repetition of CSS declarations.
+I've broken the CSS into site components so I can easily find the CSS I need to edit.
 
 ###JS
 I'm making an AJAX request to fetch the success page, and I am then rendering it on the same page as the initial. I didn't want to load a new page as I didn't want to lose the data once the form was submitted. I also didn't want to store the data in local storage, or in a cookie, or as a query string in a url, which would require additional parsing.
