@@ -16,7 +16,7 @@ The production files should be available in the 'dist' folder after running 'gru
 
 ## Discssion
 ### CSS
-I've opted to use SASS to compile the CSS, I hope this is ok. It allowed me to create mixins and extendable CSS for CSS rules that were commonly used. This cut out repetition of CSS declarations.
+I've opted to use Sass to compile the CSS, I hope this is ok. It allowed me to create mixins and extendable CSS for CSS rules that were commonly used. This cut out repetition of CSS declarations.
 I've broken the CSS into site components so I can easily find the CSS I need to edit.
 
 ###JS
